@@ -33,7 +33,7 @@ footer {
 
 /* Navigation */
 nav ul {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   justify-content: center;
   background: #444;
