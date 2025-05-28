@@ -3,22 +3,26 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #AEC8A4;
 }
+
 header {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #272114;
+  color: #e0e6dd;
   padding: 10px 0;
   text-align: center;
 }
+
 main {
   padding: 20px;
+  text-align: center;
 }
+
 footer {
-  background-color: #333;
+  background-color: #252116;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -27,3 +31,79 @@ footer {
   bottom: 0;
 }
 
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #444;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #555;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Sections */
+section {
+  display: none;
+  padding: 2rem;
+}
+
+section.active {
+  display: block;
+}
+
+/* Gallery */
+#gallery {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.insta-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+/* Social Icons with Glow Hover */
+.social-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.7);
+
+}
